@@ -13,7 +13,7 @@
         <input type="range" v-model="size" min="50" max="1100" step="10" class="slider"/>
         
         <div class="circle" :class="[selectedColor], [circle_classes]" :style="[
-        { width: size + 'px', height: size + 'px', lineHeight: size + 'px' }, 
+        { width: size + 'px', height: size + 'px', lineHeight: size + 'px', fontSize: fontSize + 'px' }, 
         ]">
         {{ cicleText }}
     </div>

@@ -4,8 +4,9 @@ let vm = Vue.createApp({
             isPurple: false,
             selectedColor: '',
             size: 150,
+            textSize: 50,
             texts: [
-                'Vil',
+                'Vill',
                 'du',
                 'vara',
                 'min',
@@ -29,6 +30,10 @@ let vm = Vue.createApp({
             } else {
                 return this.texts[4]; 
             }
+        },
+        fontSize() {
+            let fontSize = this.size / 6;
+            return fontSize > 175 ? 175 : fontSize;
         }
     }
 }).mount('#app');
